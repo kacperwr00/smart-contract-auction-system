@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+
+# some of rust obejct files
+*.bin
+*.json
+*.lock

@@ -1,4 +1,4 @@
-
+# Getting to know Hyperledger Sawtooth
 
 Requirements:
 <ul>
@@ -6,12 +6,9 @@ Requirements:
     <li> Rust installed                         (I've decided to use Rust API with Sawtooth)</li>
     <li> Docker engine and compose installed    (or setting up nodes for testing by hand) </li>
 </ul>
- 
 
-References:
+Contents:
 <ul>
-    <li> Hyperledger Developer's Guide (with installation and network creation) : https://sawtooth.hyperledger.org/docs/1.2/app_developers_guide/</li>
-</ul> 
-
-Running the sawtooth demo described in Using Docker for a Single Sawtooth Node section of the developer's guide:
-docker compose -f sawtooth-default.yaml up
+    <li> documentation_examples directory includes instructions for a quickstart with Sawtooth networks </li>
+    <li> smart_hello directory includes a hello world style application with the first sawtooth smart contract I implemented using a Rust API</li>
+</ul>
