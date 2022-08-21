@@ -8,12 +8,22 @@ We could write smart contracts targetting a public, established blockchain and d
 
 We could also create our own blockchain - it's actually quite simple to implement a Bitcoin-style blockchain, especially using a good crypto library. Creating an EVM-style blockchain though, that could execute smart contracts would be a much bigger undertaking. A solution that I am partial to right now would be to use a framework providing the ability to create private blockchains, preferably one from the Hyperledger Project.
 
+## Blockchain comparison
+
 Currently considered blockchains and their pros/cons include:
 <ul>
     <li>Solana
         <ul>
             <li> ✅ proof of history and proof of stake - makes it easier to agree on the order of the actions on the shared ledger - can be crucial for an auction system; also reduces overhead at the same time ✅ </li>
-            <li> ✅ b ✅ </li>
+            <li> ✅ Transaction fees on Solana are estimated at $10 for 1 million transaction (vs up to $10 per transaction on current Etheruem) ✅ </li>
+            <li> ✅ 65,000 transactions per second (just as much as Visa's and 4000 times more than Etheuruem); 400ms block times ✅ </li>
+            <li> ✅ Claims it's scalable and secure ✅ </li>
+            <li> ✅ Rust / C / C++ ✅ </li>
+            <li> ✅ not EVM compatible, but bridge available ✅ </li>
+            <li> ✅ JSON RPC API and many different SDKs built on top of it (which annoys me at the same time - why do we need the transaction payload to be human readable and introduce overhead?) ✅ </li>
+            <li> ✅ Great documentation and community ✅ </li>
+            <li> ✅ Many open source projects available which may be used as examples ✅ </li>
+            <li> 🔴 Naturally only includes a single predefined blockchain which can't be configured by the developer to fit the specific needs of the project. You get what you get (a permissionless PoS + PoH blockchain) 🔴 </li>
         </ul>
     </li>
     <li>EOS
@@ -53,10 +63,10 @@ Currently considered blockchains and their pros/cons include:
     </li>
         <li>Polkadot and Monero:
         <ul>
-            <li> 🔴 Doesn't support smart contracts by design; they are possible only by using parachains connecting to the main chain - which probably means they are less refined/harder to work with 🔴 </li>
+            <li> 🔴 Don't support smart contracts by design; they are possible only by using parachains connecting to the main chain - which probably means they are less refined/harder to work with 🔴 </li>
         </ul>
     </li>
 
 </ul>
 
-Ethereum is not considered because of the upcoming merge (which may or may not break the application), as well as (currently?) ridiculous fees, transaction speed and scalability
+Ethereum is not considered because of the upcoming merge (currently scheduled in semptember and it may or may not break the application), as well as (currently?) ridiculous fees, transaction speed and scalability
