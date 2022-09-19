@@ -56,9 +56,19 @@ Currently considered blockchains and their pros/cons include:
     </li>
     <li> Hyperledger Fabric
         <ul>
+            <li> ✅ allows for customization of the distributed ledger ✅ </li>
             <li> ✅ supports both its own smart contracts and ethereum ones ✅ </li>
+            <li> ✅ verbose, thourough documentation (a bit messy and outdated though) ✅ </li>
+            <li> ✅ multiple samples and examples ✅ </li>
+            <li> 20000 transactions per second advertised (depends on configuration and hardware on the network). Again, both Visa and Solana achieve around 70000; performance should still be good enough for permissioned enterprise use cases. </li>
+            <li> 🔴 permissioned networks only 🔴 </li>
+            <li> 🔴 only Raft is really supported (not BFT, ) 🔴 </li>
+            <li> 🔴 depending on the network configuration can get very centralized 🔴 </li>
+            <li> 🔴 lots of components of the network, feels complicated 🔴 </li>
+            <li> 🔴 verbose cli commands requiring lots of arguments (supposedly improved by v2.4 Fabric Gateway, yet the documentation is older than that version) 🔴 </li>
             <li> 🔴 unfortunately does not include an SDK in any of the civilized languages yet - go could work 🔴 </li>
             <li> 🔴 more code / work required compared to deploying smart contracts to an existing chain 🔴 </li>
+            <li> 🔴 the least user-friendly (yet powerfull) CLI I have ever seen; looks like it lacks an another abstraction layer over it's internals; some examples use node to provide that abstraction layer - so it seems like that is also meant to be user-configurable 🔴 </li>
         </ul>
     </li>
         <li>Polkadot and Monero:
