@@ -11,7 +11,7 @@ Hello world can be found here:
 * Install : <https://hyperledger-fabric.readthedocs.io/en/latest/getting_started.html>
 * Run an example network : <https://hyperledger-fabric.readthedocs.io/en/latest/test_network.html>
 * Develop own smart contract : <https://hyperledger-fabric.readthedocs.io/en/latest/deploy_chaincode.html>
-* Key concepts - long, but exhaustive explanation of Fabric Networks : <https://hyperledger-fabric.readthedocs.io/en/latest/getting_started.html>
+* Key concepts - long, but exhaustive explanation of Fabric Networks : <https://hyperledger-fabric.readthedocs.io/en/latest/key_concepts.html>
 
 I did not find any useful scripts I could write here, unlike with Sawtooth. The example is more thorough than Sawtooth's, explanations and usage of the examples are user friendly, if a bit too high level.
 
