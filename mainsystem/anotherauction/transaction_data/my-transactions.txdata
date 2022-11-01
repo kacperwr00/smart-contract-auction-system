@@ -1,0 +1,44 @@
+[
+    {
+        "transactionName": "MyAssetAbcbacbExists",
+        "transactionLabel": "A test MyAssetAbcbacbExists transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "CreateMyAssetAbcbacb",
+        "transactionLabel": "A test CreateMyAssetAbcbacb transaction",
+        "arguments": [
+            "001",
+            "some value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "ReadMyAssetAbcbacb",
+        "transactionLabel": "A test ReadMyAssetAbcbacb transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "UpdateMyAssetAbcbacb",
+        "transactionLabel": "A test UpdateMyAssetAbcbacb transaction",
+        "arguments": [
+            "001",
+            "some other value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "DeleteMyAssetAbcbacb",
+        "transactionLabel": "A test DeleteMyAssetAbcbacb transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    }
+]

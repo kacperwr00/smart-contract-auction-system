@@ -17,7 +17,7 @@
 *.dll
 
 # Fortran module files
-*.mod
+
 *.smod
 
 # Compiled Static libraries
@@ -36,3 +36,9 @@
 *.bin
 *.json
 *.lock
+
+mainsystem/fabric-samples/*
+mainsystem/auction/*
+mainsystem/myproject/vendor/*
+mainsystem/vendor/*
+mainsystem/anotherauction/vendor/*
