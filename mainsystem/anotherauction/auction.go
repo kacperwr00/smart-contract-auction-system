@@ -14,26 +14,28 @@ package main
 type Auction struct {
 	// every object needs a type field - they are referenced by ID only
 	// and we can never know what ctx.GetStub().GetState(auctionID) will return
-	Type   string            `json:"objectType"`
-	Item   string            `json:"item"`
-	Seller string            `json:"seller"`
-	Bids   map[string]uint32 `json:"bids"`
-	Winner string            `json:"winner"`
-	Price  uint32            `json:"price"`
+	Type     string         `json:"objectType"`
+	Item     string         `json:"item"`
+	Seller   string         `json:"seller"`
+	Bids     map[string]Bid `json:"bids"`
+	Winner   string         `json:"winner"`
+	Price    uint32         `json:"price"`
+	FinishTS int64          `json:"finishTs"`
 	//enums are not supported by fabric so we have to manually emulate them
 	Status string `json:"status"`
 }
 
 //TODO:
 //list of active auctions
-type ActiveAuctions struct {
-	Type string `json:"objectType"`
-}
+// type ActiveAuctions struct {
+// 	Type string `json:"objectType"`
+// }
 
 // I have decided just storing the price should be enough for now
 
-// type Bid struct {
-// 	Type   string `json:"objectType"`
-// 	Price  uint32 `json:"price"`
-// 	Bidder string `json:"bidder"`
-// }
+type Bid struct {
+	Type   string `json:"objectType"`
+	Price  uint32 `json:"price"`
+	TSSec  int64  `json:"tsSec"`
+	TSNano int32  `json:"tsNano"`
+}
